@@ -24,7 +24,7 @@ jobs:
           git checkout -b master1 bushixuanqi/main
           rm -rf .github/
           git add --all
-          git commit -m 'ignore .github/*'
+          #git commit -m 'ignore .github/*'
           git checkout master
           git merge master1 --allow-unrelated-histories -m 'merge from latest'
 
