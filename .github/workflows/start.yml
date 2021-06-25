@@ -22,7 +22,9 @@ jobs:
           git remote add bushixuanqi https://github.com/bushixuanqi/book-source.git
           git fetch bushixuanqi
           git checkout -b master1 bushixuanqi/main
-          rm -rf .github/*
+          rm -rf .github/
+          git add --all
+          git commit -m 'ignore .github/*'
           git checkout master
           git merge master1 --allow-unrelated-histories -m 'merge from latest'
 
