@@ -19,9 +19,9 @@ jobs:
           cd shuyuan/
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
-          git remote add bushixuanqi https://gitee.com/no-mystery/shuyuan.git
+          git remote add bushixuanqi https://github.com/bushixuanqi/book-source.git
           git fetch bushixuanqi
-          git checkout -b master1 bushixuanqi/master
+          git checkout -b master1 bushixuanqi/main
           git checkout master
           git merge master1 --allow-unrelated-histories -m 'merge from latest'
 
